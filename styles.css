@@ -11,7 +11,7 @@ body p {
 
 /* Set a background color for the body */
 body {
-    background-image: url('pic/Jura_bw.jpg');
+    background-image: url('pic/forest.jpg');
     background-size: cover; /* Adjust the sizing as needed */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -107,7 +107,7 @@ nav a {
 
 /* Style the content between the header and footer */
 .content {
-    margin: 10px 400px 10px 400px;
+    margin: 10px 250px 10px 250px;
     line-height: 1.5; /* Adjust line spacing as needed */
     padding: 20px;
     border-radius: 5px;
