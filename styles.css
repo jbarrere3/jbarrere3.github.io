@@ -80,14 +80,19 @@ nav a {
     font-weight: bold;
 }
 
-/* Style for the profile picture on the index page */
+/* New profile picture styling - centered at top */
 .profile-container {
-    margin: 0 0 20px 20px; /* Adjust margin for spacing */
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Add vertical spacing */
+    width: 100%; /* Take full width */
 }
+
 .profile-container img {
-    width: 200px; /* Increase the size */
-    height: 200px; /* Maintain aspect ratio */
-    border-radius: 50%;
+    width: auto; /* Let the image use its natural width */
+    height: auto; /* Let the image use its natural height */
+    max-width: 500px; /* Limit maximum size */
+    max-height: 300px; /* Limit maximum size */
+    border-radius: 0; /* Remove circular cropping */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,11 +101,12 @@ nav a {
     margin: 20px; /* Adjust margin as needed */
 }
 
+/* For centered text content */
 .text-content-centered {
+    width: 100%; /* Take full width */
     text-align: center; /* Center text horizontally */
-    align-items: start; /* Center text vertically */
-    flex: 1; /* Allow the text to take up the available space */
-    margin: 10px 70px; /* Adjust margin as needed */
+    margin: 20px 0; /* Consistent vertical spacing */
+    padding: 0 20px; /* Add some side padding */
 }
 
 .text-content-justified {
@@ -127,6 +133,7 @@ nav a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
     display: flex;
+    flex-direction: column; /* Stack children vertically */
     align-items: flex-start;
     max-width: 900px; /* Added to limit maximum width */
     margin-left: auto; /* These two lines center the content */
